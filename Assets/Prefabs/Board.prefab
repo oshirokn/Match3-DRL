@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6899824968959497558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6899824968959497556}
+  - component: {fileID: 6899824968959497557}
+  m_Layer: 0
+  m_Name: Board
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6899824968959497556
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899824968959497558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 6899824970412364895}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6899824968959497557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899824968959497558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30c438dbe28949c4d98ea0d3fa0a47e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  world: {fileID: 11400000, guid: 4b6dab1c0e06eb54e93aa2b515497da8, type: 2}
+  currentState: 1
+  width: 7
+  height: 7
+  offSet: 40
+  tilePrefab: {fileID: 123981988278952506, guid: 60830769ff7e1494b9162e55f4ac82e0,
+    type: 3}
+  dots:
+  - {fileID: 4198110954387512779, guid: 176b906d793ef4948b9236f47ee1955d, type: 3}
+  - {fileID: 6073660360766168670, guid: 0c390887b58bd3a4b9487584e5352ffb, type: 3}
+  - {fileID: 9158790259549221144, guid: 0872fed96ee54694f8d7f8078a7466e6, type: 3}
+  - {fileID: 4034597194995136970, guid: 93c6fb640eb5f63458222d68b28a17d5, type: 3}
+  - {fileID: 1527343789835425741, guid: 0a99af87ca2a3664cb68a805091663f3, type: 3}
+  - {fileID: 6223709426492755251, guid: 1d8e47543ed69814387387b42a6f8614, type: 3}
+  - {fileID: 4267912279731298922, guid: c8a91fe52d15e504a95a33e51ab8d361, type: 3}
+  - {fileID: 6715002826086248449, guid: 888e722c9fccfa94b990cecd7eb2a870, type: 3}
+  boardLayout: []
+  destroyEffect: {fileID: 2160185307162480954, guid: c5fdc779dec1fe947ab8fd81007d4962,
+    type: 3}
+  trashCan: {fileID: 0}
+  ScoreManager: {fileID: 6899824970412364894}
+  restart: {fileID: 0}
+  SoundManager: {fileID: 0}
+  trash:
+  - {fileID: 4198110954387512779, guid: 22bbd2d231ef711448dfea8586afa5a1, type: 3}
+  - {fileID: 6073660360766168670, guid: da87ff2d7d0813b4b8b8d6ffde1fe7bf, type: 3}
+  - {fileID: 9158790259549221144, guid: 04f0958f912048d4d97fe5d4aac135e5, type: 3}
+  - {fileID: 4034597194995136970, guid: bcbdaf976956d684193b465b72dc37a4, type: 3}
+  - {fileID: 1527343789835425741, guid: 85bdab756b89ee342bb5e56f84563222, type: 3}
+  - {fileID: 6223709426492755251, guid: a8717c41299a63942beb0eeb05e2cf7e, type: 3}
+  - {fileID: 4267912279731298922, guid: 748ff41436b16b04992af6a736bc8f9c, type: 3}
+  - {fileID: 6715002826086248449, guid: 1c22a770660d7004d8f14bedd7f60cb8, type: 3}
+--- !u!1 &6899824970412364888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6899824970412364895}
+  - component: {fileID: 6899824970412364894}
+  m_Layer: 0
+  m_Name: ScoreManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6899824970412364895
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899824970412364888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 6899824968959497556}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6899824970412364894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6899824970412364888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1a5ae19f95710fb45ba77278bcbc9709, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 0}
+  scoreNeededText: {fileID: 0}
+  levelText: {fileID: 0}
+  next: {fileID: 0}
+  tips: {fileID: 0}
